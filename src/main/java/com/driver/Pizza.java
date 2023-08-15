@@ -20,8 +20,8 @@ public class Pizza {
         this.bill = "";
     }
 
-    public Pizza() {
-        this.isVeg = false;
+    private Pizza() {
+        this.isVeg = true;
         // your code goes here
         this.price = isVeg ? 300 : 400;
 

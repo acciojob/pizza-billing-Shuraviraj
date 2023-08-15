@@ -7,8 +7,4 @@ import com.driver.DeluxePizza;
 import com.driver.Pizza;
 
 public class TestCases {
-    @Test
-    public void testStringConcatenation() {
-        assertTrue(true);
-    }
 }

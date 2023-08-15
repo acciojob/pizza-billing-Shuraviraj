@@ -20,6 +20,17 @@ public class Pizza {
         this.bill = "";
     }
 
+    public Pizza() {
+        this.isVeg = false;
+        // your code goes here
+        this.price = isVeg ? 300 : 400;
+
+        this.isExtraCheese = false;
+        this.isExtraToppings = false;
+        this.isBagged = false;
+        this.bill = "";
+    }
+
     public int getPrice(){
         return this.price;
     }
@@ -60,7 +71,7 @@ public class Pizza {
         if (isBagged) {
             bill += "Paperbag Added: 20\n";
         }
-        bill += "Total Price: " + this.price;
+        bill += "Total Price: " + this.price + "\n";
         return this.bill;
     }
 }

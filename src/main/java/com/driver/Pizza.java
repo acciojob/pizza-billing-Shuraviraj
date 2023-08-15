@@ -4,7 +4,7 @@ public class Pizza {
 
     private int price;
     private Boolean isVeg;
-    private String bill;
+    private String bill = "";
     private boolean isExtraCheese;
     private boolean isExtraToppings;
     private boolean isBagged;
@@ -17,18 +17,6 @@ public class Pizza {
         this.isExtraCheese = false;
         this.isExtraToppings = false;
         this.isBagged = false;
-        this.bill = "";
-    }
-
-    private Pizza() {
-        this.isVeg = true;
-        // your code goes here
-        this.price = isVeg ? 300 : 400;
-
-        this.isExtraCheese = false;
-        this.isExtraToppings = false;
-        this.isBagged = false;
-        this.bill = "";
     }
 
     public int getPrice(){

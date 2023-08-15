@@ -4,7 +4,7 @@ public class Pizza {
 
     private int price;
     private Boolean isVeg;
-    private String bill = "";
+    private String bill;
     private boolean isExtraCheese;
     private boolean isExtraToppings;
     private boolean isBagged;
@@ -49,6 +49,7 @@ public class Pizza {
 
     public String getBill(){
         // your code goes here
+        bill = "";
         bill += "Base Price Of The Pizza: " + (isVeg ? 300 : 400) + "\n";
         if (isExtraCheese) {
             bill += "Extra Cheese Added: 80\n";

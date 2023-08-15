@@ -60,7 +60,7 @@ public class Pizza {
         if (isBagged) {
             bill += "Paperbag Added: 20\n";
         }
-        bill += "Total Price: " + this.price + "\n";
+        bill += "Total Price: " + this.price;
         return this.bill;
     }
 }
